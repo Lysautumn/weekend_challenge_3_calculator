@@ -2,7 +2,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
-var mathRouter = ('./routes/math');
+var mathRouter = require('./routes/math');
 var app = express();
 
 //middleware
