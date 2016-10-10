@@ -4,6 +4,7 @@
     <meta charset='utf-8'>
     <script src='/vendor/jquery/dist/jquery.min.js' charset='utf-8'></script>
     <script src='js/client.js' charset='utf-8'></script>
+    <link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">
     <link rel='stylesheet' href='/style/style.css' />
     <title>Calc-Rho-Lator</title>
   </head>
@@ -15,41 +16,38 @@
         <div id='answer'>
 
         </div>
-        <input type='text' id='firstNum' />
-        <input type='text' id='secondNum' />
-        <button type='button' class='number' id='1'>1</button>
-        <button type='button' class='number' id='2'>2</button>
-        <button type='button' class='number' id='3'>3</button>
-        <button type='button' class='number' id='4'>4</button>
-        <button type='button' class='number' id='5'>5</button>
-        <button type='button' class='number' id='6'>6</button>
-        <button type='button' class='number' id='7'>7</button>
-        <button type='button' class='number' id='8'>8</button>
-        <button type='button' class='number' id='9'>9</button>
-        <button type='button' class='number' id='0'>0</button>
-        <button type='button' class ='number' id='decimal'>.</button>
-        <input type='submit' id='submit' value='='/>
-        <button type='button' class='mathOper' class='number' id='add'>+</button>
-        <button type='button' class='mathOper' class='number' id='sub'>-</button>
-        <button type='button' class='mathOper' class='number' id='multiply'>x</button>
-        <button type='button' class='mathOper' class='number' id='divide'>/</button>
+        <div class='row'>
+          <input type='text' id='firstNum' />
+          <input type='text' id='secondNum' />
+        </div>
+        <br />
+        <div class='row'>
+          <button type='button' class='number' id='1'>1</button>
+          <button type='button' class='number' id='2'>2</button>
+          <button type='button' class='number' id='3'>3</button>
+          <button type='button' class='mathOper' class='number' id='add'>+</button>
+        </div>
+        <div class='row'>
+          <button type='button' class='number' id='4'>4</button>
+          <button type='button' class='number' id='5'>5</button>
+          <button type='button' class='number' id='6'>6</button>
+          <button type='button' class='mathOper' class='number' id='sub'>-</button>
+        </div>
+        <div class='row'>
+          <button type='button' class='number' id='7'>7</button>
+          <button type='button' class='number' id='8'>8</button>
+          <button type='button' class='number' id='9'>9</button>
+          <button type='button' class='mathOper' class='number' id='multiply'>x</button>
+        </div>
+        <div class='row'>
+          <button type='button' class='number' id='0'>0</button>
+          <button type='button' class ='number' id='decimal'>.</button>
+          <input type='submit' id='submit' value='='/>
+          <button type='button' class='mathOper' class='number' id='divide'>/</button>
+        </div>
+
       </form>
       <button id='clear'>Clear</button>
-
-      <!-- <h2>Enter numbers to be calculated here:</h2>
-      <form>
-        <input type='text' id='firstNum' />
-        <input type='text' id='secondNum' />
-        <button type='button' class='mathOper' id='add'>+</button>
-        <button type='button' class='mathOper' id='sub'>-</button>
-        <button type='button' class='mathOper' id='divide'>/</button>
-        <button type='button' class='mathOper' id='multiply'>x</button>
-        <input type='submit' id='submit' value='='/>
-      </form>
-      <div id='answer'>
-
-      </div>
-      <button id='clear'>Clear</button> -->
     </div>
   </body>
 </html>

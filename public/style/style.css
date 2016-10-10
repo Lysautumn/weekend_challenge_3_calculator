@@ -1,3 +1,38 @@
-.hide {
-  display: none;
+body {
+  background-color: blanchedalmond;
+}
+h1 {
+  text-align: center;
+  font-family: 'Nova Flat', cursive;
+}
+.number {
+  height: 25px;
+  width: 35px;
+  background-color: gainsboro;
+}
+.mathOper {
+  height: 25px;
+  width: 35px;
+  background-color: blue;
+  color: white;
+}
+#submit {
+  height: 25px;
+  width: 35px;
+  background-color: gold;
+}
+#clear {
+  height: 25px;
+  width: 152px;
+  background-color: red;
+  color: white;
+}
+#calc {
+  background-color: teal;
+  height: 150px;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  padding: 50px 25px 25px 25px;
 }
