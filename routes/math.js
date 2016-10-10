@@ -1,3 +1,5 @@
+//or: var router = require('express').Router();
+
 var express = require('express');
 
 //bring in router from express library

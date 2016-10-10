@@ -1,10 +1,12 @@
 $(function () {
+    //variables
     var x = '';
     var y = '';
     var mathObj = { x: 0, y: 0, operator: '' };
     var operator;
     var operClick = false;
 
+    //event listeners for button clicks
     $('.number').on('click', function () {
       if (operClick == false) {
         x = x + $(this).text();

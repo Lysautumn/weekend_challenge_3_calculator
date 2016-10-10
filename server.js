@@ -31,6 +31,7 @@ app.get('/', function (req, res) {
   res.sendFile(filename);
 });
 
+//makes everything in public folder accessible from the server
 app.use(express.static('public'));
 
 //listener function
