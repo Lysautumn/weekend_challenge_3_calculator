@@ -8,16 +8,16 @@ var router = express.Router();
 var answer = '0';
 router.post('/', function (req, res) {
   if (req.body.operator == 'add') {
-    answer = parseFloat(req.body.firstNum) + parseFloat(req.body.secondNum);
+    answer = parseFloat(req.body.x) + parseFloat(req.body.y);
     res.sendStatus(200);
   } else if (req.body.operator == 'sub') {
-    answer = parseFloat(req.body.firstNum) - parseFloat(req.body.secondNum);
+    answer = parseFloat(req.body.x) - parseFloat(req.body.y);
     res.sendStatus(200);
   } else if (req.body.operator == 'divide') {
-    answer = parseFloat(req.body.firstNum) / parseFloat(req.body.secondNum);
+    answer = parseFloat(req.body.x) / parseFloat(req.body.y);
     res.sendStatus(200);
   } else if (req.body.operator == 'multiply') {
-    answer = parseFloat(req.body.firstNum) * parseFloat(req.body.secondNum);
+    answer = parseFloat(req.body.x) * parseFloat(req.body.y);
     res.sendStatus(200);
   } else {
     console.log('Not working');

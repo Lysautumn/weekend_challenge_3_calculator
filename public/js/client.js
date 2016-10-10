@@ -1,20 +1,45 @@
 $(function () {
-    var firstNum;
-    var secondNum;
-    var mathObj = { firstNum: 0, secondNum: 0, operator: '' };
+    var x = '';
+    var y = '';
+    var mathObj = { x: 0, y: 0, operator: '' };
     var operator;
+    var operClick = false;
+
+    $('.number').on('click', function () {
+      if (operClick == false) {
+        x = x + $(this).text();
+        $('#firstNum').val(x);
+      }
+    });
+
     $('.mathOper').on('click', function () {
       operator = $(this).attr('id');
+      operClick = true;
     });
+
+    $('.number').on('click', function () {
+      if (operClick == true) {
+        y = y + $(this).text();
+        $('#secondNum').val(y);
+      }
+    });
+
+    // $('.number').on('click', function () {
+    //   firstNum = $(this).text();
+    // });
+
+    // $('.number').on('click', function() {
+    //   secondNum = $(this).text();
+    // });
 
     $('#submit').on('click', function (event) {
         event.preventDefault();
-        firstNum = $('#firstNum').val();
-        secondNum = $('#secondNum').val();
+        x = $('#firstNum').val();
+        y = $('#secondNum').val();
 
         //put firstNum, secondNum and operator into the empty array mathObj
-        mathObj.firstNum = firstNum;
-        mathObj.secondNum = secondNum;
+        mathObj.x = x;
+        mathObj.y = y;
         mathObj.operator = operator;
         console.log(mathObj);
 
@@ -27,9 +52,10 @@ $(function () {
         });//end of ajax
         $('form').find('input[type=text]').val('');
       });//end of on click function
+
     $('#clear').on('click', function () {
       $('#answer').empty();
-    })
+    });
   });//end of jQuery
 
 //what to do when math operator is returned
