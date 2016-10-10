@@ -43,6 +43,9 @@ $(function () {
           url: '/math',
           data: mathObj,
           success: getMath,
+          //or: $.post('/math', mathObj).then(function(response){
+          //getMath... etc
+        })
         });//end of ajax
         $('form').find('input[type=text]').val('');
       });//end of on click function
