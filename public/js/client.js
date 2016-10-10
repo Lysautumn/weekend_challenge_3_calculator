@@ -24,14 +24,6 @@ $(function () {
       }
     });
 
-    // $('.number').on('click', function () {
-    //   firstNum = $(this).text();
-    // });
-
-    // $('.number').on('click', function() {
-    //   secondNum = $(this).text();
-    // });
-
     $('#submit').on('click', function (event) {
         event.preventDefault();
         x = $('#firstNum').val();
@@ -65,9 +57,7 @@ function getMath() {
     url: '/math',
     success: function (math) {
         $('#answer').empty();
-        var $div = $('<div></div>');
-        $div.append('<p>' + math + '</p>');
-        $('#answer').append($div);
+        $('#answer').append(math);
       },
   });
 }
